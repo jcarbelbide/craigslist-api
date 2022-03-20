@@ -1,0 +1,8 @@
+wr250f|wr250|wrf250|"wr 250"|"wr 250 f"|"wrf 250"|"wr 250f"
+
+
+developer discord:
+ironaxebtw@gmail.com    
+standard g password
+
+python -m pip install SomePackage
