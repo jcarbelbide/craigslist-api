@@ -22,4 +22,4 @@ def craigslist_api(location, sub_location, board, starting_index, query):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0", port=8082)
