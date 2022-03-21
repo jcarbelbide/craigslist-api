@@ -15,9 +15,6 @@ class CraigslistListing:
         self.unix_time = self._calculate_unix_time()
         self.location = location
 
-    def to_json(self):
-        return json.dumps(self.__dict__)
-
     def _calculate_unix_time(self):
         # ts = ciso8601.parse_datetime(self.date_time)
         datetime_split = str.split(self.date_time)

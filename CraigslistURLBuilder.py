@@ -32,7 +32,7 @@ class CraigslistURLBuilder:
         if str(self._starting_index) == '0':
             return ""
         else:
-            return f"s=%i&" % self._starting_index
+            return f"s=%s&" % self._starting_index
 
     def query(self, query):
         self._query = query

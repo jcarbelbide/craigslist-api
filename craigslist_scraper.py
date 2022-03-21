@@ -85,18 +85,13 @@ def get_craigslist_listings(location, sub_location, board, starting_index, query
 
         # Put it into the dictionary.
         craigslist_listings_list.append(craigslist_listing)
-        craigslist_listings_json_list.append(craigslist_listing.to_json())
-        # print(craigslist_listing.to_json())
 
-    # json_list = json.dumps(craigslist_listings_json_list)
+    json_list = json.dumps(craigslist_listings_list, default=lambda obj: obj.__dict__)
 
     # test_listing = craigslist_listings_list[0]
-    # print(test_listing.unix_time)
-
-    # print(json_list)
     # print(test_listing.date_time, test_listing.listing_title, test_listing.location, test_listing.url, test_listing.price, test_listing.unix_time)
 
-    return craigslist_listings_json_list
+    return json_list
 
 
 if __name__ == '__main__':
