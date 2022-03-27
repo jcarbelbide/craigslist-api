@@ -9,7 +9,7 @@ app.config['CORS_HEADERS'] = 'application/json'
 
 
 @cross_origin()
-@app.route("/api/<location>/<sub_location>/<board>/<starting_index>/<query>")
+@app.route("/api/<location>/<sub_location>/<board>/<starting_index>/<query>", methods=['GET', 'OPTIONS'])
 def craigslist_api(location, sub_location, board, starting_index, query):
     json_list = get_craigslist_listings(location, sub_location, board, starting_index, query)
 
