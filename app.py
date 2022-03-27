@@ -5,10 +5,8 @@ from craigslist_scraper import get_craigslist_listings
 
 app = Flask(__name__)
 cors = CORS(app)
-# app.config['CORS_HEADERS'] = 'Content-Type'
 
 
-# @cross_origin(origin='*', headers=['Content-Type', 'Authorization'])
 @app.route("/api/<location>/<sub_location>/<board>/<starting_index>/<query>", methods=['GET', 'OPTIONS'])
 def craigslist_api(location, sub_location, board, starting_index, query):
 
@@ -17,7 +15,6 @@ def craigslist_api(location, sub_location, board, starting_index, query):
     resp = Response(response=json_list,
                     status=200,
                     mimetype="application/json")
-    # resp.headers.add('Access-Control-Allow-Origin', '*')
 
     return resp
 
