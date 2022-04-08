@@ -38,3 +38,7 @@ Changing the ```startingIndex``` will result in only returning postings after an
 ```query``` is your search string, which should use ```+``` in place of spaces. For example, if ```query = "mountain+bike"```, the API will return posts related to mountain bikes. 
 
 If you are unsure what codes to use, play around with the actual Craigslist site and see what URL Craigslist creates. 
+
+An example request to the API is:
+
+http://localhost:8082/api/sfbay/all/sss/0/mountain+bike
