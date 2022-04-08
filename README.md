@@ -39,6 +39,8 @@ Changing the ```startingIndex``` will result in only returning postings after an
 
 If you are unsure what codes to use, play around with the actual Craigslist site and see what URL Craigslist creates. 
 
+<br/>
+
 An example request to the API is:
 
 http://localhost:8082/api/sfbay/all/sss/0/mountain+bike
